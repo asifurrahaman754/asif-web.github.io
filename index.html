@@ -1,0 +1,237 @@
+<!--some notes i have learned in this project -->
+
+<!--1. dont write href on the hamberger a(anchor) element. cause if you do this in small screen the page will go to the start whenever you click the hamberger icon -->
+<!--Always write the responsive menu function in every a(anchor) element written for small screen. exm(line 45-48)-->
+<!-- -->
+<!-- -->
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>One Direction</title>
+	<link rel="stylesheet" href="w3.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="file:///F:/Icon_fontawesome/fontawesome-free-5.11.2-web/css/all.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body id="the_body">
+	<header>
+		<nav class="w3-bar w3-black w3-card w3-top">
+			<a onclick="myMenu()" class="w3-bar-item w3-padding-large w3-button w3-right w3-hide-medium w3-hide-large"><i class="fa fa-bars"></i></a>
+			
+			<a href="#the_body" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+			<a href="#the_band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+			<a href="#the_tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+			<a href="#the_contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+			<div class="w3-dropdown-hover w3-hide-small">
+				 <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>  
+				<div class="w3-dropdown-content w3-bar-block w3-card">
+					<a href="#" class="w3-bar-item w3-button">Mercendice</a>
+					<a href="#" class="w3-bar-item w3-button">Extras</a>
+					<a href="#" class="w3-bar-item w3-button">Media</a>
+				</div>
+			</div>
+			<a  onclick="myFunction();"  class="searchbtn w3-bar-item w3-button w3-right w3-hide-small w3-red w3-padding-large"><i class="fa fa-search"></i></a>
+		</nav>
+		<div class="serach-box-div">
+		<div id="searchBr" class="search-bar w3-animate-top">
+				<input type="text" placeholder="Search..." class=" w3-round w3-padding-large w3-input w3-light-grey w3-border" />		
+				<span class="close-icon" onclick="closeS();"><i class="far fa-times-circle"></i></span>
+		</div>
+		</div>
+		<!--Responsive Navigation -->
+		<div id="menuItem" class="w3-hide w3-animate-top w3-bar-block w3-black w3-top w3-hide-medium w3-hide-large" style="margin-top:46px;position:fixed">
+			<a href="#the_band" class="w3-bar-item w3-button w3-padding-large" onclick="myMenu()">BAND</a>
+			<a href="#the_tour" class="w3-bar-item w3-button w3-padding-large" onclick="myMenu()">TOUR</a>
+			<a href="#the_contact" class="w3-bar-item w3-button w3-padding-large" onclick="myMenu()">CONTACT</a>
+			<a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myMenu()">MERCENT</a>
+		</div>
+	</header>
+	
+<!--slideshow image -->
+	<div class="slider-wrapper" style="margin-top:46px">
+		<div class="mySlides w3-display-container w3-center">
+			<img src="img/la.jpg" alt="" style="width:100%" />
+			<div class="w3-display-bottommiddle w3-xlarge w3-text-light-grey w3-hide-small w3-padding-32">
+				 <h3>Los Angeles</h3>
+				 <p><b>We had the best time playing at Venice Beach!</b></p>  
+			</div>
+		</div>
+		<div class="mySlides w3-display-container w3-center">
+			<img src="img/ny.jpg" alt="" style="width:100%" />
+			<div class="w3-display-bottommiddle w3-xlarge w3-text-light-grey w3-hide-small w3-padding-32">
+				  <h3>New York</h3>
+				  <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+			</div>
+		</div>
+		<div class="mySlides w3-display-container w3-center">
+			<img src="img/chicago.jpg" alt="" style="width:100%" />
+			<div class="w3-display-bottommiddle w3-xlarge w3-text-light-grey w3-hide-small w3-padding-32">
+				 <h3>Chicago</h3>
+				 <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+			</div>
+		</div>
+	</div>
+	
+	<!--Band section -->
+	<div id="the_band" class="w3-center w3-padding-64 w3-content w3-container" style="max-width: 800px">
+		<h2 class="w3-wide">THE BAND</h2>
+		<h4 class="w3-opacity"><i>We love music</i></h4>
+		<p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		
+		<div class="w3-row-padding w3-padding-32">
+			<div class="w3-third">
+				<p>Name</p>
+				<img src="img/bandmember.jpg" style="width:60%" alt="" />
+			</div>
+			<div class="w3-third">
+				<p>Name</p>
+				<img src="img/bandmember.jpg" style="width:60%" alt="" />
+			</div>
+			<div class="w3-third">
+				<p>Name</p>
+				<img src="img/bandmember.jpg" style="width:60%" alt="" />
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-black" id="the_tour">
+		<div class="w3-content w3-center w3-container w3-padding-32" style="max-width:800px">
+			<h2 class="w3-wide">TOUR DATES</h2>
+			<p class="w3-opacity"><i>Remember to book your tickets!</i></p> <br />
+			<ul class="w3-ul w3-white w3-border w3-section w3-left-align">
+				<li class="w3-text-grey w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+				<li class="w3-text-grey w3-padding">October  <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+				<li class="w3-text-grey w3-padding">November <span class="w3-badge w3-black w3-right">3</span></li>
+			</ul>
+			<div class="w3-row-padding w3-padding-32 w3-left-align" style="margin:0px -16px">
+				<div class="w3-third w3-margin-bottom">
+					<img src="img/newyork.jpg" class="w3-hover-opacity" style="width:100%" alt="" />
+					<div class="w3-container w3-white">
+						<h4>New York</h4>
+						<p class="w3-text-grey">Fri 27 Nov 2016</p>
+						<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+						<button class="w3-button w3-black w3-padding w3-margin-bottom" onclick="document.getElementById('ticketModl').style.display='block'">Buy Tickets</button>
+					</div>					
+				</div>
+				<div class="w3-third w3-margin-bottom">
+					<img src="img/paris.jpg" class="w3-hover-opacity" style="width:100%" alt="" />
+					<div class="w3-container w3-white">
+						<h4>Paris</h4>
+						<p class="w3-text-grey">Sat 28 Nov 2016</p>
+						<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+						<button class="w3-button w3-black w3-padding w3-margin-bottom" onclick="document.getElementById('ticketModl').style.display='block'">Buy Tickets</button>
+					</div>					
+				</div><div class="w3-third w3-margin-bottom">
+					<img src="img/sanfran.jpg" class="w3-hover-opacity" style="width:100%" alt="" />
+					<div class="w3-container w3-white">
+						<h4>San Francisco</h4>
+						<p class="w3-text-grey">Sun 29 Nov 2016</p>
+						<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+						<button class="w3-button w3-black w3-padding w3-margin-bottom" onclick="document.getElementById('ticketModl').style.display='block'">Buy Tickets</button>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Modal -->
+	<div id="ticketModl" class="w3-modal" style="display:none">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-teal w3-padding-32 w3-center w3-container">
+				<span onclick="document.getElementById('ticketModl').style.display='none'" class="w3-display-topright w3-button w3-xlarge">x</span>
+				<h2 class="w3-wide">
+					<i class="fas fa-suitcase"></i> Tickets
+				</h2>
+			</header>
+			<div class="w3-container">
+				<p>
+					<label for=""><i class="fas fa-shopping-cart"></i> Tickets, $15 per person</label>
+				</p>
+				<input type="text" class="w3-input w3-border" placeholder="How many?"/>
+				<p>
+					<label for=""><i class="fas fa-user"></i> Send To</label>
+				</p>
+				<input type="text" class="w3-input w3-border" placeholder="Enter email"/>
+				<button class="w3-button w3-block w3-teal w3-large w3-section">Pay <i class="fas fa-check-circle"></i></button>
+				<button onclick="document.getElementById('ticketModl').style.display='none'" class="w3-red w3-button w3-section">Close &times;</button>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div id="the_contact" class="w3-container w3-content w3-padding-64" style="max-width:800px">
+		<h2 class="w3-center w3-wide">CONTACT</h2>
+		<p class="w3-text-grey w3-center w3-margin-bottom"><i>Fan? Drop a note!</i></p>
+		<div class="w3-row w3-padding-32">
+			<div class="w3-half w3-large w3-margin-bottom">
+				<i class="fas fa-map-marker-alt w3-margin-right"></i><span>Chicago, US</span><br />
+				<i class="fas fa-phone w3-margin-right"></i><span>Phone: +00 151515</span><br />
+				<i class="fas fa-envelope w3-margin-right"></i><span>Email: mail@mail.com</span>
+			</div>
+			<div class="w3-half">
+				<form action="">
+					<div class="w3-row-padding" style="margin: 0px -16px 15px -16px;">
+						<div class="w3-half">
+							<input type="text" placeholder="Name" class="w3-input w3-large w3-border" />
+						</div>
+						<div class="w3-half">
+							<input type="email" placeholder="Email" class="w3-input w3-large w3-border" />
+						</div>					
+					</div>
+					<input type="text" placeholder="Message" class="w3-input w3-large w3-border" />
+					<button type="submit" class="w3-button w3-black w3-large w3-section w3-right">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  </i><i class="fab fa-facebook-square w3-hover-opacity"></i>
+  <i class="fab fa-instagram-square w3-hover-opacity"></i>
+ <i class="fab fa-snapchat-square w3-hover-opacity"></i>
+  <i class="fab fa-pinterest-square w3-hover-opacity"></i>
+ <i class="fab fa-twitter-square w3-hover-opacity"></i>
+  <i class="fab fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+	
+		
+	<script>
+function myFunction() {
+  document.getElementById("searchBr").style.display = "block";
+};
+function closeS(){
+  document.getElementById("searchBr").style.display = "none";
+};
+//responsie nav
+function myMenu() {
+   var x = document.getElementById("menuItem");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+//Slider
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
