@@ -1,0 +1,23 @@
+body {font-family: "Lato", sans-serif}
+html {
+  scroll-behavior: smooth;
+}
+.search-bar{
+	width: 30%;
+	display: none;
+	margin-left: 62%;
+}
+span.close-icon {
+    position: absolute;
+    font-size: 30px;
+    top: 5%;
+    left: 103%;
+    cursor:pointer;
+    color: #f1f1f1;
+}
+.serach-box-div {
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    margin-top: 70px;
+}
