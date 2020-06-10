@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Fashion Blog</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://kit.fontawesome.com/00ef5ba15f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body id="the_body">
+	<!--social icon bar -->
+	<div class="w3-bar w3-black">
+		<a href="#" class="w3-bar-item w3-button"><i class="fab fa-facebook-square"></i></a>
+		<a href="#" class="w3-bar-item w3-button"><i class="fab fa-instagram"></i></a>
+		<a href="#" class="w3-bar-item w3-button"><i class="fab fa-pinterest-square"></i></a>
+		<a href="#" class="w3-bar-item w3-button"><i class="fab fa-twitter"></i></a>
+		<a href="#" class="w3-bar-item w3-button"><i class="fab fa-linkedin-in"></i></a>
+		<a href="#" class="w3-bar-item w3-button w3-right"><i class="fas fa-search"></i></a>
+	</div>
+	<div class="w3-content" style="max-width:1600px">
+		
+		<header class="w3-container w3-center w3-padding-48 w3-white">
+			<h1 class="w3-xxxlarge" style="letter-spacing: -4.2px;"><b>JANE BLOGLIFE</b></h1>
+			<h6 class="w3-center">Welcome to the blog of <span class="w3-tag w3-black"> Jane's world</span></h6>
+		</header>
+		<header class="w3-display-container">
+			<img src="img/jane.jpg" alt="" class="w3-image" style="width:100%;"/>
+			<div class="w3-display-left w3-container">
+				<h1 class="w3-text-white">Jane's</h1>
+				<h1 class="w3-jumbo w3-text-white"><b><span class="w3-hide-small">FASHION</span> BLOG</b></h1>
+				<!--<button onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-large w3-padding w3-hover-opacity-off w3-opacity w3-white">SUBSCRIBE</button> -->
+				<button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button>
+			</div>
+		</header>
+		
+		<!--subscribe modal -->
+		<div class="w3-modal " id="subscribe">
+			<div class="w3-modal-content w3-padding-large w3-padding-32 w3-animate-opacity w3-container">
+				<span onclick="document.getElementById('subscribe').style.display='none'"
+				class="w3-button w3-right w3-large w3-transparent "><i class="fas fa-times"></i></span>
+				<h1 class="w3-wide">SUBSCRIBE</h1>
+				<p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+				<input type="email" placeholder="Enter e-mail" class="w3-input w3-border w3-section" />
+				<button class="w3-button w3-block w3-red">Subscribe</button>
+			</div>
+		</div>
+		
+		<!--content part -->
+		<div class="w3-row w3-padding w3-border" style="background: #f1f1f1;">
+			<div class="w3-col l8">
+			
+				<div class="w3-container w3-white w3-padding-large w3-margin w3-margin-bottom">
+					<div class="w3-center">
+						<h3 class="">TITLE HEADING</h3>
+						<h5>Title description, <span class="w3-opacity">May 2, 2016</span></h5>
+					</div>
+					<div class="w3-justify">
+						<img src="img/girl_hat.jpg" class="w3-padding-16" style="width:100%" alt="" />
+						<p><b>More Hats! </b>I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+						<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+						<button onclick="likeF(this)" class="w3-button w3-white  w3-section w3-border"><i class="fas fa-thumbs-up"></i> Like</button>
+						<button class="w3-button w3-black  w3-section w3-right" onclick="myFunction('demo1')" id="repBtn"><b>Replies</b> &nbsp; <span class="w3-tag w3-white">1</span></button>
+						<p class="w3-clear"></p>
+						
+						<div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+							<hr />
+							<div class="w3-col l2">
+								<img src="img/avatar_smoke.jpg" style="width:90px" alt="" />
+							</div>
+							<div class="w3-col l10">
+								<h4><b>George </b>May 3, <span class="w3-opacity w3-medium">2015, 6:32 PM</span></h4>
+								<p>Great blog post! Following</p>
+							</div>
+						</div>
+					</div>				
+				</div>
+				<div class="w3-container w3-white w3-padding-large w3-margin">
+					<div class="w3-center">
+						<h3 class="">TITLE HEADING</h3>
+						<h5>Title description, <span class="w3-opacity">April 23, 2016</span></h5>
+					</div>
+					<div class="w3-justify">
+						<img src="img/man_hat.jpg" class="w3-padding-16" style="width:100%" alt="" />
+						<p><b>Hats! </b>The trend this summer is hats for men!</p>
+						<p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+						<button onclick="likeF(this)" class="w3-button w3-white  w3-section w3-border"><i class="fas fa-thumbs-up"></i> Like</button>
+						<button class="w3-button w3-black  w3-section w3-right" onclick="myFunction('demo2')" id="repBtn"><b>Replies</b> &nbsp; <span class="w3-tag w3-white">2</span></button>
+						<p class="w3-clear"></p>
+						
+						<div id="demo2" style="display:none">
+								<div class="w3-row" >
+									<hr />
+									<div class="w3-col l2">
+										<img src="img/girl.jpg" style="width:90px" alt="" />
+									</div>
+									<div class="w3-col l10">
+										<h4><b>Amber  </b>May 3, <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
+										<p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</div> <br />
+								<div class="w3-row w3-margin-bottom">
+									
+									<div class="w3-col l2">
+										<img src="img/girl_train.jpg" style="width:90px" alt="" />
+									</div>
+									<div class="w3-col l10">
+										<h4><b>Angie  </b>May 3, <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM </span></h4>
+										<p>Love hats!!</p>
+									</div>
+								</div>
+						</div>
+						
+					</div>				
+				</div>
+				<div class="w3-container w3-white w3-padding-large w3-margin">
+					<div class="w3-center">
+						<h3 class="">TITLE HEADING</h3>
+						<h5>Title description, <span class="w3-opacity">April 7, 2016</span></h5>
+					</div>
+					<div class="w3-justify">
+						<img src="img/runway.jpg" class="w3-padding-16" style="width:100%" alt="" />
+						<p><b>Dont miss!  </b>The runway in New York City this weekend is gonna be legendary!</p>
+						<p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+						<button onclick="likeF(this)" class="w3-button w3-white  w3-section w3-border"><i class="fas fa-thumbs-up"></i> Like</button>
+						<button class="w3-button w3-black  w3-section w3-right" onclick="myFunction('demo3')" id="repBtn"><b>Replies</b> &nbsp; <span class="w3-tag w3-white">3</span></button>
+						<p class="w3-clear"></p>
+						
+						<div id="demo3" style="display:none">
+								<div class="w3-row" >
+									<hr />
+									<div class="w3-col l2">
+										<img src="img/girl_mountain.jpg" style="width:90px" alt="" />
+									</div>
+									<div class="w3-col l10">
+										<h4><b>Jane  </b>May 3, <span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM </span></h4>
+										<p>That was a great runway show! Thanks for everything.</p>
+									</div>
+								</div> <br />
+								<div class="w3-row">
+									
+									<div class="w3-col l2">
+										<img src="img/boy.jpg" style="width:90px" alt="" />
+									</div>
+									<div class="w3-col l10">
+										<h4><b>John   </b>May 3, <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM </span></h4>
+										<p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+									</div>
+								</div><br />
+								<div class="w3-row w3-margin-bottom">
+									
+									<div class="w3-col l2">
+										<img src="img/girl_hood.jpg" style="width:90px" alt="" />
+									</div>
+									<div class="w3-col l10">
+										<h4><b>Anja   </b>May 3, <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM </span></h4>
+										<p>Cant wait for the runway to start!</p>
+									</div>
+								</div>
+						</div>
+						
+					</div>				
+				</div>
+				
+			</div>
+			
+			<div class="w3-col l4">
+				<div class="w3-margin" style="margin-bottom: 40px !important;">
+					<img src="img/avatar_girl2.jpg" alt="" class="w3-grayscale" width="100%"  />
+					<div class="w3-container w3-black">
+						<h3>My Name</h3>
+						<p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+					</div>
+					
+				</div>
+				<div class="w3-white w3-margin">
+					<div class="w3-padding w3-black"><h4>Popular Posts</h4></div>
+					<ul class="w3-ul w3-hoverable">
+						<li class="w3-padding-16">
+							<img src="img/avatar_smoke.jpg" alt="" width="50px" class="w3-left w3-margin-right" />
+							<span class="w3-large">Denim</span><br />
+							<span>Sed mattis nunc</span>
+						</li>
+						<li class="w3-padding-16">
+							<img src="img/bandmember.jpg" alt="" width="50px" class="w3-left w3-margin-right" />
+							<span class="w3-large">Sweaters</span><br />
+							<span>Praes tinci sed</span>
+						</li>
+						<li class="w3-padding-16">
+							<img src="img/avatar_smoke.jpg" alt="" width="50px" class="w3-left w3-margin-right" />
+							<span class="w3-large">Workshop</span><br />
+							<span>Ultricies congue</span>
+						</li>
+						<li class="w3-padding-16">
+							<img src="img/avatar_smoke.jpg" alt="" width="50px" class=" w3-sepia w3-left w3-margin-right" />
+							<span class="w3-large">Trends</span><br />
+							<span>Lorem Ipsum Dolor</span>
+						</li>
+					</ul>
+				</div>
+				<hr />
+				<div class="w3-white w3-margin">
+					<div class="w3-padding w3-container w3-black"><h4>Advertise</h4></div>
+					<div class="w3-container w3-white">
+						<div class="w3-section w3-display-container w3-light-grey " style="height:200px">
+							<span class="w3-display-middle">Your add here</span>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div class="w3-white w3-margin">
+					<div class="w3-padding w3-container w3-black"><h4>Tags</h4></div>
+					<div class="w3-container w3-white">
+										<p>
+							<span class="w3-tag w3-black w3-margin-bottom">Fashion</span>
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> 
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hats</span> 
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Norway</span>
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> 
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deals</span> 
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span>
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> 
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span>
+							<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>
+						  </p>
+					</div>
+				</div>
+				<hr />
+				<div class="w3-white w3-margin">
+					<div class="w3-padding w3-container w3-black"><h4>Inspiration</h4></div>
+					<div class="w3-row-padding w3-white">
+						<div class="w3-half">
+							<p><img src="img/jeans.jpg" alt="" style="width:100%"/></p>
+							<p><img src="img/team1.jpg" alt="" style="width:100%"/></p>
+							
+						</div>
+						<div class="w3-half">
+							<p><img src="img/avatar_hat.jpg" alt="" style="width:100%"/></p>
+							<p><img src="img/team4.jpg" alt="" style="width:100%"/></p>
+							
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div class="w3-white w3-margin">
+					<div class="w3-padding w3-container w3-black"><h4>Follow Me</h4></div>
+					<div class="w3-container w3-xlarge w3-padding">
+					  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+					  <i class="fa fa-instagram w3-hover-opacity"></i>
+					  <i class="fa fa-snapchat w3-hover-opacity"></i>
+					  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+					  <i class="fa fa-twitter w3-hover-opacity"></i>
+					  <i class="fa fa-linkedin w3-hover-opacity"></i>
+					</div>
+				</div>
+				<hr />
+				<div class="w3-white w3-margin">
+					<div class="w3-padding w3-container w3-black"><h4>Subscribe</h4></div>
+					<div class="w3-container w3-white">
+						<p>Enter your e-mail below and get notified on the latest blog posts.</p>
+						<p><input type="text"  placeholder="Enter-e-mail" class="w3-input w3-border" /></p>
+						<p><button class="w3-button w3-red w3-block" onclick="document.getElementById('subscribe').style.display='block'">Subscribe</button></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<footer class="w3-black w3-hover-dark-grey w3-padding-32">
+			<p class="w3-center">COPYRIGHT PROTECTED 2020</p>
+			<div class="w3-container w3-center w3-xlarge w3-padding">
+					  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+					  <i class="fa fa-instagram w3-hover-opacity"></i>
+					  <i class="fa fa-snapchat w3-hover-opacity"></i>
+					  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+					  <i class="fa fa-twitter w3-hover-opacity"></i>
+					  <i class="fa fa-linkedin w3-hover-opacity"></i>
+					</div>
+	</footer>
+	
+	<a id="scrollTopBtn" class="top-arrow w3-animate-opacity" style="display:none" href="#the_body"><i class="fas fa-angle-up"></i></a>
+	
+<script type="text/javascript">
+
+//toggle the replie button for show the comment
+	function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) { 
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+//like the post
+function likeF (x){
+	x.innerHTML = "&#10003; Liked";
+}
+
+//scroll top button
+window.onscroll = function() {sclF()};
+
+function sclF() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("scrollTopBtn").style.display = "block";
+  } else {
+    document.getElementById("scrollTopBtn").style.display = "none";
+  }
+}
+</script>	
+	
+</body>
+</html>
+
+
+
