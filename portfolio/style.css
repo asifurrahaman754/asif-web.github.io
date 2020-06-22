@@ -45,7 +45,7 @@ img.biobg2 {
     top: 30px;
     left: 71px;
 }
-.port img{border: 1px solid #ddd; padding: 10px}
+.port img{border: 1px solid #ddd; padding: 10px; background-color : #f1f1f1;}
 hr.mlw-border {
     width: 10%;
     background-color: #ef3ab2;
