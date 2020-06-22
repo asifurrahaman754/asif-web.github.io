@@ -1,4 +1,4 @@
-html { scroll-behavior: smooth; overflow-x: hidden}
+html { scroll-behavior: smooth; }
 a{text-decoration: none;}
 .logo{font-family: sans-serif; font-size: 25px !important;}
 .menu{font-family: 'Montserrat Alternates', sans-serif; font-size: 16px; margin-top: 10px}
@@ -38,6 +38,7 @@ img.biobg2 {
     width: 68px;
     right: 50px;
     bottom: 37px;
+	z-index: -999;
 }
 .tesmonialbg2 {
     width: 40px;
@@ -100,7 +101,13 @@ img.con-bg-img {
     cursor: pointer;
 }
 .fsocial-icon i:hover{background-color: #f1f1f1;}
-
+#menuItem{
+	display:none;
+	position:fixed;
+	margin-top:78px;
+	background: #f037b2 !important;
+	color: white !important;
+}
 @media only screen and (max-width: 992px) {
   .biot {text-align: center;}
   .biot p{padding-right: 0px !important}
