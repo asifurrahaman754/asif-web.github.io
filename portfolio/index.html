@@ -39,7 +39,7 @@
 		</nav>		
 		
 		<!--Responsive nav -->
-		<nav id="" class=" w3-top w3-center w3-animate-top w3-bar-block w3-hide-large w3-hide-medium">
+		<nav id="menuItem" class="w3-hide w3-top w3-center w3-animate-top w3-bar-block w3-hide-large w3-hide-medium">
 			<a href="#home" onclick="myMenu()" class="w3-bar-item w3-border-bottom w3-button">Home</a>
 			<a href="#biography" onclick="myMenu()" class="w3-bar-item w3-border-bottom  w3-button">About</a>
 			<a href="#portfolio" onclick="myMenu()" class="w3-bar-item w3-border-bottom w3-button">Portfolio</a>
@@ -198,14 +198,7 @@
 	</div>
 	<script type="text/javascript">
 	//responsie nav
-function myMenu() {
-   var x = document.getElementById("menuItem");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+
 
 //img modal
 
