@@ -108,7 +108,6 @@ img.con-bg-img {
 	background: #f037b2 !important;
 	color: white !important;
 }
-
 @media only screen and (max-width: 992px) {
   .biot {text-align: center;}
   .biot p{padding-right: 0px !important}
