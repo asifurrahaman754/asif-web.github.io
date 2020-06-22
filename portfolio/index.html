@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Asifur's porto</title>
+	<script src="https://kit.fontawesome.com/00ef5ba15f.js" crossorigin="anonymous"></script>
+	<!--<link rel="stylesheet" href="file:///F:/Icon_fontawesome/fontawesome-free-5.11.2-web/css/all.css" />-->
+
+	<!--Google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!--<link rel="stylesheet" href="w3.css">-->
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body id="home">
+	<header class="w3-display-container header">
+		<img src="img/headerbg.png" alt="header bg " class="bg-img" />
+		
+		<nav class="w3-bar w3-container">		
+			<a onclick="myMenu()" class="w3-large w3-top w3-bar-item w3-hide-medium w3-hide-large" style="margin-top:18px; cursor:pointer"><i class="fas fa-ellipsis-h"></i></a>
+					
+			<h5 class="w3-xlarge w3-left logo w3-hide">Asifur Rahaman</h5>
+			<div class="w3-center menu">
+				<a href="#home" class="w3-bar-item w3-hide-small">Home</a>
+				<a href="#biography" class="w3-bar-item w3-hide-small">About</a>
+				<a href="#portfolio" class="w3-bar-item w3-hide-small">Portfolio</a>
+				<a href="#testimonial" class="w3-bar-item w3-hide-small">Testimonial</a>	
+			</div>		
+			<div class="social-icon w3-right" style="margin-top:10px">
+				<a href="#" class=" w3-bar-item w3-large"><i class="fab fa-twitter "></i></a>
+				<a href="#" class=" w3-bar-item w3-large"><i class="fab fa-github"></i></a>	
+				<a href="#" class=" w3-bar-item w3-large"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			
+		</nav>		
+		
+		<!--Responsive nav -->
+		<nav id="menuItem" class=" w3-top w3-center w3-animate-top w3-bar-block w3-light-grey w3-hide-large w3-hide-medium" style="display:none;position:fixed;margin-top:55px;">
+			<a href="#home" onclick="myMenu()" class="w3-bar-item w3-border-bottom w3-button">Home</a>
+			<a href="#biography" onclick="myMenu()" class="w3-bar-item w3-border-bottom  w3-button">About</a>
+			<a href="#portfolio" onclick="myMenu()" class="w3-bar-item w3-border-bottom w3-button">Portfolio</a>
+			<a href="#testimonial" onclick="myMenu()" class="w3-bar-item w3-button">Testimonial</a>
+		</nav>
+		
+		<div class="w3-row">
+			<div class="w3-col l6 w3-large Intro w3-padding-16">
+				<span>Hello I'm</span><br />
+				<h1 class="nm w3-xxxlarge w3-animate-left"><b>Asifur Rahaman</b></h1>
+				<p class="w3-xlarge">I am a Web Designer and a Developer <br /> Grow your bussiness with a beautiful website.</p>
+				<a href="#portfolio" class="w3-button btn w3-round w3-card-4 w3-text-white">See my work</a>
+			</div>
+			<div class="w3-col l6 w3-center">
+				<img src="img/webimg1.png" class="w3-padding-32 " style="width:80%;" alt="" />
+			</div>
+		</div>
+		<img src="img/connectl.png" class="connectl pab" />
+	</header>
+	
+	<!-- Biography -->
+	<div id="biography" class="w3-row w3-display-container w3-padding-64 w3-light-grey">
+		<div class="w3-col l6  w3-center w3-hide-medium">
+			<img src="img/webimg2.png" class="w3-hide-small w3-hide-medium" style="width:51%; transform:rotate(15deg);" alt="biography image" />
+		</div>
+		<div class="w3-col l6 w3-container biot w3-padding-16">
+			<h2 style="font-family: 'Dosis', sans-serif;"><b>Biography</b></h2>
+			<p style="padding-right: 150px; line-height: 25px;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			<button class="w3-button w3-margin-top btn w3-round w3-card-4 w3-text-white">Download CV</button>
+		</div>
+		
+		<img src="img/biobg1.png" class="pab w3-hide-small w3-hide-medium biobg1" alt="bio img" />
+		<img src="img/biobg2.png" class="pab w3-hide-small w3-hide-medium biobg2" alt="bio img" />
+	</div>
+	
+	<!--Portfolio -->
+	<div id="portfolio" class="w3-display-container" style="margin:100px 0px;">
+		<img src="img/portobg.png" alt="portfolio bg" class="pab port-bg-img" />
+		<h2 class="w3-center w3-xxlarge" style="font-family:'Dosis', sans-serif;"><b>My Latest Work</b></h2> 
+		<hr class="mlw-border"/>
+		
+		<div class=" port w3-row-padding w3-padding-32 w3-content" style="max-width: 1200px;">
+			<div class="w3-col l4">
+				<img src="img/porto1.png" class="w3-hover-shadow w3-round" onclick="openModal();currentDiv(1)" width="100%" alt="" />
+			</div>
+			<div class="w3-col l4">
+				<img src="img/porto2.png" class="w3-hover-shadow w3-round" onclick="openModal();currentDiv(2)" width="100%" alt="" />
+			</div>
+			<div class="w3-col l4">
+				<img src="img/porto3.png" class="w3-hover-shadow w3-round" onclick="openModal();currentDiv(3)" width="100%" alt="" />
+			</div>
+		</div>
+		
+	</div>
+	
+	<!--Img modal -->
+	<div id="myModal" class="w3-modal w3-black">
+		 <span class="w3-text-white w3-xxlarge w3-hover-text-pink w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">&times;</span>
+		 <div class="w3-modal-content w3-animate-zoom">
+
+		  <div class="w3-content" style="max-width:1200px">
+		   <img class="myModalImg" src="img/porto1.png" style="width:100%">
+		   <img class="myModalImg" src="img/porto2.png" style="width:100%">
+		   <img class="myModalImg" src="img/porto3.png" style="width:100%">
+		   
+		   <div class="w3-row w3-black w3-center">
+			<div class="w3-display-container">
+			 <p id="caption"></p>
+			 <span class="w3-display-left w3-btn" onclick="plusModal(-1)"><</span>
+			 <span class="w3-display-right w3-btn" onclick="plusModal(1)">></span>
+			</div>
+			<div class="w3-col s4">
+			 <img class="demo w3-opacity w3-hover-opacity-off" src="img/porto1.png" style="width:100%" onclick="currentDiv(1)" alt="Band Website">
+			</div>
+			<div class="w3-col s4">
+			 <img class="demo w3-opacity w3-hover-opacity-off" src="img/porto2.png" style="width:100%" onclick="currentDiv(2)" alt="Parralax Website">
+			</div>
+			<div class="w3-col s4">
+			 <img class="demo w3-opacity w3-hover-opacity-off" src="img/porto3.png" style="width:100%" onclick="currentDiv(3)" alt="Fashion Blog">
+			</div>
+		   </div> <!-- End row -->
+		   
+		  </div> <!-- End w3-content -->
+		  
+		 </div> <!-- End modal content -->
+	</div> <!-- End modal -->
+
+	<!--testimonial -->
+	<div id="testimonial" style="margin-bottom:100px">
+		<h2 class="w3-center w3-xxlarge" style="font-family:'Dosis', sans-serif;"><b>What Client are say</b></h2> 
+		<hr class="mlw-border"/>
+		
+		  <div class="w3-content testh w3-container w3-display-container" style="max-width:900px;height:55vh">		
+			<img src="img/biobg2.png" class="pab  tesmonialbg2" alt="bio img" />
+			
+			<div class="mySlides" style="display:block">
+			  <div class="w3-display-middle w3-center  w3-container w3-padding-16">
+				<p class="w3-animate-opacity" style="text-style:italic">" It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less "</p>
+				<h4><i class="fas fa-user w3-margin-right"></i><b>Mark Ruffalo</b></h4>
+			  </div>
+			</div>
+
+			<div class="mySlides" style="display:none">
+			  <div class="w3-display-middle w3-center  w3-container w3-padding-16">
+				<p class="w3-animate-opacity" style="text-style:italic">" by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has "</p>
+				<h4><i class="fas fa-user w3-margin-right"></i><b>Chris Hemsworth</b></h4>
+			  </div>
+			</div>
+
+			<div class=" mySlides" style="display:none">
+			  <div class="w3-display-middle w3-center w3-container w3-padding-16 ">
+				<p class="w3-animate-opacity" style="text-style:italic">" a reader will be distracted by the readable content of a page when looking at its layout."</p>
+				<h4><i class="fas fa-user w3-margin-right"></i><b>Robert Drowny J.R</b></h4>
+			  </div>
+			</div>
+
+			<button class="w3-button w3-large w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-large w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			
+			<img src="img/portobg.png" alt="portfolio bg" class="pab con-bg-img" />
+			<img src="img/biobg1.png" class="test pab  tesmonialbg1" alt="bio img" />
+		  </div>
+	</div>
+	
+	<!--Contact-->
+	<div class="w3-content" id="contact" style="margin-bottom:100px;max-width:900px">
+		<h2 class="w3-center w3-xxlarge" style="font-family:'Dosis', sans-serif;"><b>Contact Me</b></h2> 
+		<span class="w3-center w3-small w3-block"><i>let's do a project</i></span>
+		
+		<form action="" class="w3-padding-48">
+			<div class="w3-row-padding" style="margin: 0px -16px;">
+				<div class=" w3-col s6">
+				  <input type="text" placeholder="First Name" class="w3-round w3-input w3-border" required/>
+				</div>
+				<div class=" w3-col s6">
+				  <input type="text" placeholder="Last Name" class="w3-round  w3-input w3-border" required/>
+				</div>				
+			</div>
+			<input type="email" class="w3-input w3-round  w3-margin-top w3-border" placeholder="Email" required/>
+			<small class="w3-small">We'll never share your email with anyone else.</small>
+			<textarea name="" class="w3-input w3-round  w3-margin-top w3-border" cols="30" placeholder="Your Message" rows="10"></textarea>
+			<button style="margin-right: 0px !important" type="submit" class="w3-button btn w3-round w3-card-4 w3-text-white w3-margin w3-padding-large w3-right">Send <i class="fas fa-long-arrow-alt-right"></i></button>
+		</form>
+		
+	</div>
+	
+	<!--footer -->
+	<div class="w3-panel w3-center w3-padding-32" id="footer">
+		<div class="fsocial-icon w3-xxlarge w3-margin-bottom">
+			<i class="fab fa-twitter "></i>
+			<i class="fab fa-github"></i>
+			<i class="fab fa-linkedin-in"></i>
+			
+		</div>
+		<p>&copy; Copywrite protected 2020</p>
+	</div>
+	<script type="text/javascript">
+	//responsie nav
+function myMenu() {
+   var x = document.getElementById("menuItem");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+//img modal
+
+	function openModal() {
+	  document.getElementById('myModal').style.display = "block";
+	}
+
+	function closeModal() {
+	  document.getElementById('myModal').style.display = "none";
+	}
+
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusModal(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function currentDiv(n) {
+	  showDivs(slideIndex = n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("myModalImg");
+	  var dots = document.getElementsByClassName("demo");
+	  var captionText = document.getElementById("caption");
+	  if (n > x.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+	  }
+	  x[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " w3-opacity-off";
+	  captionText.innerHTML = dots[slideIndex-1].alt;
+	}
+	
+	//testimonial slider
+
+function plusDivs(n) {
+  showTslider(slideIndex += n);
+}
+
+function showTslider(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}	
+	
+	
+	
+	</script>
+</body>
+</html>
