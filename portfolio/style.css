@@ -1,4 +1,4 @@
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden}
 a{text-decoration: none;}
 .logo{font-family: sans-serif; font-size: 25px !important;}
 .menu{font-family: 'Montserrat Alternates', sans-serif; font-size: 16px; margin-top: 10px}
