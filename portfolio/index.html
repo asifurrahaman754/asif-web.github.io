@@ -21,7 +21,7 @@
 		<img src="img/headerbg.png" alt="header bg " class="bg-img" />
 		
 		<nav class="w3-bar w3-container">		
-			<a onclick="myMenu()" class="w3-large w3-top w3-bar-item w3-hide-medium w3-hide-large" style="margin-top:18px; cursor:pointer"><i class="fas fa-ellipsis-h"></i></a>
+			<a onclick="openNav()" class="w3-large w3-top w3-bar-item w3-hide-medium w3-hide-large" style="margin-top:18px; cursor:pointer"><i class="fas fa-ellipsis-h"></i></a>
 					
 			<h5 class="w3-xlarge w3-left logo w3-hide">Asifur Rahaman</h5>
 			<div class="w3-center menu">
@@ -29,22 +29,32 @@
 				<a href="#biography" class="w3-bar-item w3-hide-small">About</a>
 				<a href="#portfolio" class="w3-bar-item w3-hide-small">Portfolio</a>
 				<a href="#testimonial" class="w3-bar-item w3-hide-small">Testimonial</a>	
+				<a href="#contact" class="w3-bar-item w3-hide-small">Contact</a>	
 			</div>		
 			<div class="social-icon w3-right" style="margin-top:10px">
 				<a href="#" class=" w3-bar-item w3-large"><i class="fab fa-twitter "></i></a>
-				<a href="https://github.com/asifurrahaman754/asif-web.github.io" class=" w3-bar-item w3-large"><i class="fab fa-github"></i></a>	
+				<a href="#" class=" w3-bar-item w3-large"><i class="fab fa-github"></i></a>	
 				<a href="#" class=" w3-bar-item w3-large"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			
 		</nav>		
 		
 		<!--Responsive nav -->
-		<nav id="menuItem" class=" w3-top w3-center w3-animate-top w3-bar-block w3-hide-large w3-hide-medium">
-			<a href="#home" onclick="myMenu()" class="w3-bar-item w3-border-bottom w3-button">Home</a>
-			<a href="#biography" onclick="myMenu()" class="w3-bar-item w3-border-bottom  w3-button">About</a>
-			<a href="#portfolio" onclick="myMenu()" class="w3-bar-item w3-border-bottom w3-button">Portfolio</a>
-			<a href="#testimonial" onclick="myMenu()" class="w3-bar-item w3-button">Testimonial</a>
-		</nav>
+		
+		<div id="myNav" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  
+			  <div class="overlay-content">
+				<a href="#home" onclick="closeNav()">Home</a>
+				<a href="#biography" onclick="closeNav()">About</a>
+				<a href="#portfolio" onclick="closeNav()">Portfolio</a>
+				<a href="#testimonial" onclick="closeNav()">Testimonial</a>
+				<a href="#contact" onclick="closeNav()">Contact</a>
+			  </div>
+		</div>
+		
+		
+		
 		
 		<div class="w3-row">
 			<div class="w3-col l6 w3-large Intro w3-padding-16">
@@ -77,7 +87,7 @@
 	
 	<!--Portfolio -->
 	<div id="portfolio" class="w3-display-container" style="margin:100px 0px;">
-		<img src="img/portobg.png" alt="portfolio bg" class="w3-hide-small pab port-bg-img" />
+		<img src="img/portobg.png" alt="portfolio bg" class="pab port-bg-img" />
 		<h2 class="w3-center w3-xxlarge" style="font-family:'Dosis', sans-serif;"><b>My Latest Work</b></h2> 
 		<hr class="mlw-border"/>
 		
@@ -101,9 +111,9 @@
 		 <div class="w3-modal-content w3-animate-zoom">
 
 		  <div class="w3-content" style="max-width:1200px">
-		   <a href="https://asifurrahaman754.github.io/asif-web.github.io/bandweb/" target=”_blank”><img class="myModalImg" src="img/porto1.jpg" style="width:100%"></a>
-		   <a href="https://asifurrahaman754.github.io/asif-web.github.io/parralax%20web/" target=”_blank”><img class="myModalImg" src="img/porto2.jpg" style="width:100%"></a>
-		   <a href="https://asifurrahaman754.github.io/asif-web.github.io/personal%20blog/" target=”_blank”><img class="myModalImg" src="img/porto3.jpg" style="width:100%"></a>
+		   <img class="myModalImg" src="img/porto1.jpg" style="width:100%">
+		   <img class="myModalImg" src="img/porto2.jpg" style="width:100%">
+		   <img class="myModalImg" src="img/porto3.jpg" style="width:100%">
 		   
 		   <div class="w3-row w3-black w3-center">
 			<div class="w3-display-container">
@@ -190,7 +200,7 @@
 	<div class="w3-panel w3-center w3-padding-32" id="footer">
 		<div class="fsocial-icon w3-xxlarge w3-margin-bottom">
 			<i class="fab fa-twitter "></i>
-			<a href="https://github.com/asifurrahaman754/asif-web.github.io"><i class="fab fa-github"></i></a>
+			<i class="fab fa-github"></i>
 			<i class="fab fa-linkedin-in"></i>
 			
 		</div>
@@ -198,13 +208,12 @@
 	</div>
 	<script type="text/javascript">
 	//responsie nav
-function myMenu() {
-   var x = document.getElementById("menuItem");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
 }
 
 //img modal

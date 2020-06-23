@@ -45,7 +45,7 @@ img.biobg2 {
     top: 30px;
     left: 71px;
 }
-.port img{border: 1px solid #ddd; padding: 10px; background-color : #f1f1f1;}
+.port img{border: 1px solid #ddd; padding: 10px}
 hr.mlw-border {
     width: 10%;
     background-color: #ef3ab2;
@@ -101,13 +101,43 @@ img.con-bg-img {
     cursor: pointer;
 }
 .fsocial-icon i:hover{background-color: #f1f1f1;}
-#menuItem{
-	display:none;
-	position:fixed;
-	margin-top:78px;
-	background: #f037b2 !important;
-	color: white !important;
+/* responsive menu*/
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #7d265e;
+  overflow-y: hidden;
+  transition: 0.5s;
 }
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #ef3ab2;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 50px;
+}
+
 @media only screen and (max-width: 992px) {
   .biot {text-align: center;}
   .biot p{padding-right: 0px !important}
