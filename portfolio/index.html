@@ -6,7 +6,15 @@
 	<title>Asifur's porto</title>
 	<script src="https://kit.fontawesome.com/00ef5ba15f.js" crossorigin="anonymous"></script>
 	<!--<link rel="stylesheet" href="file:///F:/Icon_fontawesome/fontawesome-free-5.11.2-web/css/all.css" />-->
-
+	
+	<!-- bootsrap-->
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	 
+	<!--carousel -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+	
 	<!--Google font -->
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
@@ -138,41 +146,67 @@
 	</div> <!-- End modal -->
 
 	<!--testimonial -->
-	<div id="testimonial" style="margin-bottom:100px">
-		<h2 class="w3-center w3-xxlarge" style="font-family:'Dosis', sans-serif;"><b>What Client are say</b></h2> 
-		<hr class="mlw-border"/>
-		
-		  <div class="w3-content testh w3-container w3-display-container" style="max-width:900px;height:55vh">		
-			<img src="img/biobg2.png" class="pab  tesmonialbg2" alt="bio img" />
-			
-			<div class="mySlides" style="display:block">
-			  <div class="w3-display-middle w3-center  w3-container w3-padding-16">
-				<p class="w3-animate-opacity" style="text-style:italic">" It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less "</p>
-				<h4><i class="fas fa-user w3-margin-right"></i><b>Mark Ruffalo</b></h4>
-			  </div>
-			</div>
+	 <section id="testimonial" style="margin-bottom:100px">
+        <div id="testimonial-cover">
+            <h3 class="text-center">What others say</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="customer-testimonial" class="text-center owl-carousel owl-theme">
+                            <div class="testimonial">
+                                <img src="img/client1.jpg" class="img-responsive img-circle" alt="">
+                                <blockquote>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                                    </p>
+                                </blockquote>
+                                <div class="author">
+                                    <p>
+                                      <strong>Sundar Pichai</strong>
+                                      <span>CEO & founder </span>
+                                    </p>
+                                    
+                                </div>
+                            </div>
 
-			<div class="mySlides" style="display:none">
-			  <div class="w3-display-middle w3-center  w3-container w3-padding-16">
-				<p class="w3-animate-opacity" style="text-style:italic">" by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has "</p>
-				<h4><i class="fas fa-user w3-margin-right"></i><b>Chris Hemsworth</b></h4>
-			  </div>
-			</div>
+                            <div class="testimonial">
+                                <img src="img/client2.jpg" class="img-responsive img-circle" alt="">
+                                <blockquote>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                                    </p>
+                                </blockquote>
+                                <div class="author">
+                                    <p>
+                                      <strong>Sundar Pichai</strong>
+                                      <span>CEO & founder </span>
+                                    </p>
+                                    
+                                </div>
+                            </div>
 
-			<div class=" mySlides" style="display:none">
-			  <div class="w3-display-middle w3-center w3-container w3-padding-16 ">
-				<p class="w3-animate-opacity" style="text-style:italic">" a reader will be distracted by the readable content of a page when looking at its layout."</p>
-				<h4><i class="fas fa-user w3-margin-right"></i><b>Robert Drowny J.R</b></h4>
-			  </div>
-			</div>
+                            <div class="testimonial">
+                                <img src="img/client3.jpg" class="img-responsive img-circle" alt="">
+                                <blockquote>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                                    </p>
+                                </blockquote>
+                                <div class="author">
+                                    <p>
+                                      <strong>Sundar Pichai</strong>
+                                      <span>CEO & founder </span>
+                                    </p>
+                                    
+                                </div>
+                            </div>
 
-			<button class="w3-button w3-large w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="w3-button w3-large w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-			
-			<img src="img/portobg.png" alt="portfolio bg" class="pab con-bg-img" />
-			<img src="img/biobg1.png" class="test pab  tesmonialbg1" alt="bio img" />
-		  </div>
-	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 	
 	<!--Contact-->
 	<div class="w3-content" id="contact" style="margin-bottom:100px;max-width:900px">
@@ -206,6 +240,9 @@
 		</div>
 		<p>&copy; Copywrite protected 2020</p>
 	</div>
+	
+	<!--carousel -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script type="text/javascript">
 	//responsie nav
 function openNav() {
@@ -253,25 +290,18 @@ function closeNav() {
 	  x[slideIndex-1].style.display = "block";
 	  dots[slideIndex-1].className += " w3-opacity-off";
 	  captionText.innerHTML = dots[slideIndex-1].alt;
-	}
+	}	
 	
-	//testimonial slider
-
-function plusDivs(n) {
-  showTslider(slideIndex += n);
-}
-
-function showTslider(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}	
-	
+	//carousel
+	$(function(){
+    $("#customer-testimonial").owlCarousel({
+        items: 1,
+        autoplay: true,
+        smartSpeed: 700,
+        look:true,
+        autoPlayHoverPause: true
+    });
+});
 	
 	
 	</script>

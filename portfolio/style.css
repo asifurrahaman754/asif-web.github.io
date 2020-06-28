@@ -137,6 +137,46 @@ img.con-bg-img {
   right: 45px;
   font-size: 50px;
 }
+/*carousel */
+#customer-testimonial{
+	padding: 40px 0px;
+}
+.testimonial img{
+	margin:auto;
+	max-width: 160px;
+	padding: 5px;
+	border: 2px solid black;
+	margin-bottom: 13px;
+	border-radius: 100px;
+}
+.testimonial blockquote{
+	border: 0;
+	font-style: italic;
+	padding: 5px 150px;
+	position: relative;
+}
+.testimonial blockquote::before,
+.testimonial blockquote::after{
+	font-size: 80px;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	line-height: 1;
+}
+.testimonial blockquote::before{
+	content: "\201C";
+	top: -30px;
+	left: 100px;
+}
+.testimonial blockquote::after{
+	content: "\201D";
+	bottom: 0px;
+	right: 100px;
+}
+/*carousel */
+
+
+
 
 @media only screen and (max-width: 992px) {
   .biot {text-align: center;}
