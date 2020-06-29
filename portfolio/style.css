@@ -190,6 +190,7 @@ img.con-bg-img {
 }
 @media only screen and (max-width: 490px){
 	.testh{height: 70vh !important}
+	.Intro{padding-left: 50px !important;}
 }
 @media only screen and (max-width:560px){
 	.testimonial blockquote{padding:5px 0px}
