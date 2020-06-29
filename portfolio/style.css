@@ -146,7 +146,7 @@ img.con-bg-img {
 	max-width: 160px;
 	padding: 5px;
 	border: 2px solid black;
-	margin-bottom: 13px;
+	margin-bottom: 50px;
 	border-radius: 100px;
 }
 .testimonial blockquote{
@@ -190,4 +190,8 @@ img.con-bg-img {
 }
 @media only screen and (max-width: 490px){
 	.testh{height: 70vh !important}
+}
+@media only screen and (max-width:560px){
+	.testimonial blockquote{padding:5px 0px}
+	.testimonial blockquote::before{left:0px}
 }
