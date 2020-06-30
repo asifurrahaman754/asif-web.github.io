@@ -112,6 +112,7 @@ img.con-bg-img {
   background-color: #7d265e;
   overflow-y: hidden;
   transition: 0.5s;
+  z-index: 999;
 }
 .overlay-content {
   position: relative;
