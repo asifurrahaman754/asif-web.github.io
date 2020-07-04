@@ -59,7 +59,7 @@ img.biobg2 {
     border-radius: 10px 10px 30px 10px;
     box-shadow: 0 10px 25px rgba(96,96,96,.2);
     padding: 32px;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-out;
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
