@@ -1,7 +1,8 @@
 html { scroll-behavior: smooth; }
+h2{font-family: 'Quicksand', sans-serif;font-weight:500 !important;color: rgb(64, 62, 62);}
 a{text-decoration: none;}
 .logo{font-family: sans-serif; font-size: 25px !important;}
-.menu{font-family: 'Montserrat Alternates', sans-serif; font-size: 16px; margin-top: 10px}
+.menu{font-family: 'Montserrat Alternates', sans-serif; font-size: 16px; margin-top: 10px;margin-left:40px}
 img.bg-img {
     width: 643px;
     position: absolute;
@@ -15,7 +16,7 @@ h1.nm{font-family: 'Dosis', sans-serif; color: #ef3ab2;animation-duration: 3s}
 	font-family: 'Quicksand', sans-serif;
 	margin-top: 150px;
 }
-.btn{background-color: #ef3ab2}
+.btn{background-color:#ef3ab2;}
 .menu a:hover{
 	color: #ef3ab2;
 	transition: all .4s;
@@ -46,6 +47,49 @@ img.biobg2 {
     left: 71px;
 }
 .port img{border: 1px solid #ddd; padding: 10px}
+
+/*service carousel */
+#services p{font-family: 'Quicksand', sans-serif;font-size: 18px;margin-top: -8px;}
+#services .columnBox .title{font-size:32px;margin-bottom: 0px;}
+#services .columnBox {
+    margin: 20px auto;
+    width: 266px;
+    min-height: 296px;
+    background: #fff;
+    border-radius: 10px 10px 30px 10px;
+    box-shadow: 0 10px 25px rgba(96,96,96,.2);
+    padding: 32px;
+    transition: all .3s ease-in-out;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	position: relative;
+}
+#services .columnBox:hover{
+    transform: scale(1.1);
+    color: #f1f1f1 !important ;
+    background-color: #3838f8;
+	background-image: url(img/block.png);
+    background-repeat: no-repeat;
+	background-size:cover;
+    background-position: 10px;
+}
+hr.colhr {
+    position: absolute;
+    right: 7%;
+    top: 0%;
+    width: 50px;
+    height: 3px;
+    border-radius: 10px;
+}
+#services .columnBox .col-des{font-size:14px; margin-top:20px}
+img.serBlock-img {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+}
+/*service carousel */
+
 hr.mlw-border {
     width: 10%;
     background-color: #ef3ab2;
@@ -59,6 +103,13 @@ img.connectl {
     left: 570px;
     bottom: -95px;
     z-index: -999;
+}
+img.bubbleImg {
+    position: absolute;
+    left: 50px;
+    z-index: -999;
+    top: 0px;
+    transform: rotate(30deg);
 }
 .menu .w3-bar-item:before {
     content: "";
@@ -80,13 +131,12 @@ img.port-bg-img {
     top: 20px;
     right: -28px;
 }
-form textarea:focus,input:focus{background-color: #ddd}
-#contact{
-    border: 1px solid #dadce0;
-    padding: 20px 70px 50px  70px;
-    border-radius: 8px;
-	background-color: #f1f1f1
+form input, form textarea {
+    background: #f7f7f7;
+    border-bottom: none !important;
 }
+form input{height:50px}
+#contact{padding: 20px 70px 50px  70px;}
 img.con-bg-img {
      width: 450px;
     top: 30px;
@@ -100,6 +150,7 @@ img.con-bg-img {
     padding: 10px;
     cursor: pointer;
 }
+
 .fsocial-icon i:hover{background-color: #f1f1f1;}
 /* responsive menu*/
 .overlay {
@@ -137,6 +188,14 @@ img.con-bg-img {
   top: 20px;
   right: 45px;
   font-size: 50px;
+}
+img.dot-img {
+    position: absolute;
+    top: 0px;
+}
+img.dot-img2 {
+    position: absolute;
+    right: 0px;
 }
 /*carousel */
 #customer-testimonial{
@@ -197,4 +256,7 @@ img.con-bg-img {
 	.testimonial blockquote{padding:5px 0px}
 	.testimonial blockquote::before{left:0px}
 	.testimonial blockquote::after{right:0px}
+}
+@media only screen and (max-width:602px){
+	.responsivd-mb{margin-bottom: 25px}	
 }
