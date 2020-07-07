@@ -160,23 +160,21 @@ img.con-bg-img {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #7d265e;
+  background-color: #f4b50b;
   overflow-y: hidden;
   transition: 0.5s;
   z-index: 999;
 }
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 22%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
 }
-.overlay a {
+.overlay-content a {
   padding: 8px;
   text-decoration: none;
   font-size: 25px;
-  color: white;
   display: block;
   transition: 0.3s;
 }
