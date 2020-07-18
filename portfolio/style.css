@@ -144,14 +144,64 @@ img.con-bg-img {
     left: -323px;
     transform: rotate(84deg);
 }
-.fsocial-icon i {
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
+/* social link deign*/
+
+.social-link--linkedin {
+  color: #2d76b0;
 }
 
-.fsocial-icon i:hover{background-color: #f1f1f1;}
+.social-link--github {
+  color: #000;
+}
+.social-link--dribbble {
+  color: #b53561;
+}
+
+.social-link .social-svg {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.social-link .social-svg .social-group__icon {
+  fill: #191308;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.social-link .social-svg .social-group__inner-circle {
+  fill: transparent;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.social-link .social-svg .social-group__outline {
+  stroke: #191308;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
+  fill: #FFFBFA;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+}
+
+.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
+  fill: currentColor;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+}
+.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
+  stroke: currentColor;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .45s;
+  transition: all .45s;
+}
+
+
 /* responsive menu*/
 .overlay {
   height: 0%;
