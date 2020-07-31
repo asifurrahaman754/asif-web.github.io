@@ -376,8 +376,8 @@ p.likeText {
 	display: block;
 	}
 }
-@media only screen and (max-width: 1070px){
-	img.connectl{display: none}
+@media only screen and (max-width: 992px){
+	.social-icon{margin-top: 20px !important}
 }
 @media only screen and (max-width: 490px){
 	.testh{height: 70vh !important}
