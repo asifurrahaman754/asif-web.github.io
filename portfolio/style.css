@@ -381,6 +381,9 @@ p.likeText {
 }
 @media only screen and (max-width: 490px){
 	.testh{height: 70vh !important}
+	.social-link {
+    margin: 0px;
+	}
 }
 @media only screen and (max-width: 400px){
 	.homeBg{
