@@ -14,42 +14,47 @@
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 	
 	<!--Google font -->
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@515&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
-	
+	<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
 	
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<!--<link rel="stylesheet" href="w3.css">-->
+	<link rel="stylesheet" href="w3.css">
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body id="home">
-	<header class="w3-display-container header">
-		<img src="img/headerbg.png" alt="header bg " class="bg-img" />
+	<header class="w3-display-container" style="margin-bottom:100px">
+		<img src="img/bubble .svg" class="homeBub w3-hide-medium w3-hide-small" alt="" />
+		<div class="homeBg"></div>
+	  <div class="content-wrapper" style="max-width:1200px;margin:auto">
+		<a onclick="openNav()" class="w3-top w3-hide-large" style="margin-top:10px;width: 40px;margin-left: 10px;"><img src="img/menuIcon.svg" alt="" /></a>
 		
-		<nav class="w3-bar w3-container">		
-			<a onclick="openNav()" class="w3-large w3-top w3-bar-item  w3-hide-large" style="margin-top:10px; cursor:pointer;font-size:22px !important"><ion-icon name="grid-outline"></ion-icon></a>
-					
-			<h5 class="w3-xlarge w3-left logo w3-hide">Asifur Rahaman</h5>
-			<div class="w3-hide-small w3-hide-medium menu">
-				<a href="#home" class="w3-bar-item ">Home</a>
-				<a href="#biography" class="w3-bar-item">About</a>
-				<a href="#portfolio" class="w3-bar-item">Portfolio</a>
-				<a href="#testimonial" class="w3-bar-item">Testimonial</a>	
-				<a href="#contact" class="w3-bar-item">Contact</a>	
-			</div>		
-			<div class="social-icon w3-right" style="margin-top:10px">
-				
-				<a href="https://github.com/asifurrahaman754/asif-web.github.io" class=" w3-bar-item w3-large"><i class="fab fa-github"></i></a>	
-				<a href="#" class=" w3-bar-item w3-large"><i class="fab fa-dribbble"></i></a>
-				<a href="https://www.linkedin.com/in/asifur-rahaman-8b15901a2/" class=" w3-bar-item w3-large"><i class="fab fa-linkedin-in"></i></a>
+		<nav class="w3-bar w3-container">			
+			<div class=" w3-bar-item w3-hide-small w3-hide-medium menu" style="display:flex;padding-left:0px">
+				<a href="#home" class="menu__item">Home</a>
+				<a href="#biography" class="menu__item">About</a>
+				<a href="#portfolio" class="menu__item">Portfolio</a>
+				<a href="#testimonial" class="menu__item">Testimonial</a>	
+				<a href="#contact" class="menu__item">Contact</a>	
 			</div>
+			<ul class=" w3-bar-item w3-right social-icon w3-ul" style="margin-top: 10px">
+				<li class="w3-left">
+					<a href="https://github.com/asifurrahaman754/asif-web.github.io" class="">GH</a>	
+				</li>
+				<li class="w3-left">
+					<a href="#" class="">IN</a>			
+				</li>
+				<li class="w3-left">
+					<a href="https://github.com/asifurrahaman754/asif-web.github.io" class="">FB</a>
+				</li>
+			</ul>
 			
 		</nav>		
 		
 		<!--Responsive nav -->
 		
 		<div id="myNav" class="overlay">
-			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/close.svg" alt="" /></a>
 			  
 			  <div class="overlay-content" style="font-family: 'Montserrat Alternates', sans-serif;">
 				<a href="#home" onclick="closeNav()" class="w3-animate-left">Home</a>
@@ -58,7 +63,7 @@
 				<a href="#testimonial" onclick="closeNav()">Testimonial</a>
 				<a href="#contact" onclick="closeNav()">Contact</a>
 			  </div>
-			  <div class="social-icon w3-center" style="position: relative;top: 29%;">
+			  <div class="resp-social-icon w3-center" style="position: relative;top: 29%;">
 				
 				<a href="https://github.com/asifurrahaman754/asif-web.github.io" class=" w3-large w3-margin"><i class="fab fa-github"></i></a>	
 				<a href="#" class="w3-large w3-margin"><i class="fab fa-dribbble"></i></a>
@@ -66,38 +71,49 @@
 			   </div>
 		</div>
 		
+		<div class=" w3-padding-48 home__content w3-container" style="display:flex">
 		
-		
-		
-		<div class="w3-row">
-			<div class="w3-col l6 w3-large Intro w3-padding-16">
-				<span>Hello I'm</span><br />
-				<h1 class="nm w3-xxxlarge w3-animate-left"><b>Asifur Rahaman</b></h1>
-				<p class="w3-xlarge">I am a Web Designer and a Developer <br /> Grow your bussiness with a beautiful website.</p>
-				<a href="#portfolio" class="w3-button btn w3-round w3-card-4 w3-text-white">See my work</a>
+			<div class=" Intro w3-margin-top" >
+				<p style="font-size:18px;color: #3f51b5">Hi there,</p><br />
+				<h1 style="font-size: 32px;font-weight: 100; color:#3f51b5"><b>I'm Asifur Rahaman</b></h1>
+				<p style="color:rgb(123, 122, 140);font-size:18px;margin-top:-5px">UX | Ui desginer, frontend developer <br />
+					18 years old, Bangladesh</p>
+				<p style="font-size:18px;padding-top:5px;margin-bottom: 25%">I design & code that turn the idea to <span style="color:#3f51b5">product
+					digital and <br />website that people love it.</span></p>
+				<a href="#" class="hireBtn">See my work</a>
+				<a href="#" class="contactBtn">Contact me</a>
 			</div>
-			<div class="w3-col l6 w3-center">
-				<img src="img/webimg1.png" class="w3-padding-32 w3-animate-zoom" style="width:80%;" alt="" />
+			<div class="w3-display-container">
+				<img src="img/heroImg.png" class="w3-card-3 heroImg w3-center w3-animate-zoom" style="width:70%;transition:all .5s;float:right;position: relative;
+    z-index: 999;" alt="" />
+				<div class=""></div>
+				<img src="img/imgbg.svg" class="w3-card-3  w3-hide-medium w3-hide-small imgbg w3-animate-right" alt="" />
 			</div>
 		</div>
-		<img src="img/connectl.png" class="connectl pab" />
+	  </div>
+		
+		
 	</header>
 	
 	<!-- Biography -->
-	<div id="biography" class="w3-row w3-display-container w3-padding-64" style="background-color: #f7f7f7 !important;margin-bottom: 100px;">
-		<div class="w3-col l6  w3-center w3-hide-medium">
-			<img src="img/webimg2.png" class="w3-hide-small w3-hide-medium" style="width:51%; transform:rotate(15deg);" alt="biography image" />
-		</div>
-		<div class="w3-col l6 w3-container biot w3-padding-16">
-			<h2><b>Biography</b></h2>
-			<p style="padding-right: 150px; line-height: 25px;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-			<button class="w3-button w3-margin-top btn w3-round w3-card-4 w3-text-white"><a href="https://asifurrahaman.000webhostapp.com/" target="_blank">See my resume</a></button>
-		</div>
-		
+	<div id="biography" class="w3-display-container w3-padding-64" style="background-color: #f7f7f7 !important;margin-bottom: 100px;">
+		<h2 class="w3-center w3-xxlarge">About me</h2>
+		<div class="w3-center w3-padding-32" style="line-height: 27px;font-size: 16px;">
+			<p>Hi, i’m Asif  -UX/UI desginer  and frontend developer from Bangladesh. <br />
+			   I am interested in design and everything connected with it.
+			</p>
+			<p> I have studied the design principals in order to make sure  <br />
+				my clients and users get the best service
+			</p>
+			<p>At last i execute my plans and design through my <br />
+                tech and coding knowledge and latest technologies
+			</p>
+		</div>	
 		<img src="img/biobg1.png" class="pab w3-hide-small w3-hide-medium biobg1" alt="bio img" />
 		<img src="img/biobg2.png" class="pab w3-hide-small w3-hide-medium biobg2" alt="bio img" />
 	</div>
 	
+	<!--Services -->
 	<!--Services -->
 	<div id="services">
 		<header class="w3-padding-64">
@@ -111,7 +127,8 @@
 				<div class="columnBox">
 					<hr class="colhr" style="background: #ef3ab2;"/>
 					<p class="title"><strong>UI</strong> Design & <br /><strong>Prototyping</strong></p>
-					<p class="col-des">The beauty can be subjective depending on the viewer. I enjoy the challenge to create visual and prototyping and also leverage micro-interactions.</p>
+					<p class="col-des">The beauty can be subjective depending on the viewer. I enjoy the challenge to create visual and prototyping and also leverage micro-interactions.
+					</p>
 				</div>
 				<div class="columnBox">
 					<hr class="colhr" style="background: #f4b50b;"/>
@@ -132,7 +149,7 @@
 	<!--Portfolio -->
 	<div id="portfolio" class="w3-display-container" style="margin:200px 0px;">
 		<img src="img/portobg.png" alt="portfolio bg" class="pab w3-hide-small port-bg-img" />
-		<h2 class="w3-center w3-xxlarge w3-padding-48"><b>My Latest Work</b></h2> 
+		<h2 class="w3-center w3-xxlarge w3-padding-48">My Latest Work</h2> 
 		
 		
 		<div class=" port w3-row-padding w3-padding-32 w3-content" style="max-width: 1200px;">
@@ -183,10 +200,10 @@
 
 	<!--testimonial -->
 	<section id="testimonial" style="margin-bottom:100px;position: relative">
-	   <img src="img/dots.svg" alt="" class="dot-img" />
+	   <img src="img/dots.svg" alt="" class="dot-img w3-hide-small" />
         <div id="testimonial-cover">
-            <h2 class="w3-center w3-xxlarge" style="font-weight: 600 !important;">Customers's quotes</h2>
-			<p class="w3-center w3-small w3-margin-bottom">Don’t take our word for it. Take theirs…</p>
+            <h2 class="w3-center w3-xxlarge">Customers's quotes</h2>
+			<p class="w3-center w3-margin-bottom" style="font-size: 13px !important;">Don’t take our word for it. Take theirs…</p>
             <div class="w3-content" style="max-width:1100px !important">
                 <div class="w3-row">
                     <div class="w3-col m12" >
@@ -251,9 +268,9 @@
 	<div class="w3-content w3-display-container" id="contact" style="margin-bottom:100px;max-width:800px">
 		<h2 class="w3-center w3-xxlarge">Get in Touch</h2> 
 		<p class="w3-center w3-opacity w3-block" style="margin-bottom: 50px"><i>Let’s start build something great together.</i></p>
-		<img src="img/bubbble.svg" class="bubbleImg w3-hide-small" alt="" />
+		<img src="img/bubble .svg" class="bubbleImg w3-hide-small" alt="" />
 		
-		<form action="" class="w3-padding-48" style="font-family: 'Quicksand';" >
+		<form action="" class="w3-padding-48" style="font-family: 'Gilroy-Light';" >
 		  <div class="w3-row-padding w3-margin-top" style='margin: auto -16px;margin-bottom: 25px;'>
 			<div class="w3-half">
 			  <input type="text" class="w3-input responsivd-mb w3-round-large w3-padding " placeholder="First Name" required/>
@@ -268,15 +285,20 @@
 			
 			<textarea name=""  class="w3-input w3-round-large w3-padding  w3-margin-top " cols="30" placeholder="Write a few words about your project" rows="10"></textarea>
 			
-			<p class="" style="margin-bottom:70px;display:block;font-family:'Quicksand'">We'll never share your information with anyone else for any reason</p>
-			<button  style="width:150px;height:40px" type="submit" class="w3-button btn subbtn w3-round w3-card-3 w3-text-white ">Send </button>
+			<p class="" style="margin-bottom:70px;display:block;">We'll never share your information with anyone else for any reason</p>
+			<button type="submit" class="subBtn">Send </button>
 		</form>
 		
 	</div>
 	
 	<!--footer -->
 	<div class="w3-panel w3-center w3-padding-32" id="footer">
-		 <div class="w3-center">
+		<h2 class="w3-center w3-xxlarge">Contact</h2> 
+		<p style="margin: 15px 0px 30px 0px;letter-spacing: 1.3px;">Wanna know more or just chat? <br />
+         You are welcome! </p>
+		<button class=" mailBtn"><a href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJZXhjKKzNXRJHvzfvKptRWMrjWTDNTssVZwVlDzHLJvlTVTZCvFGNVwXmFqjKpfTfFVvQq" target="_blank">Send message</a></button>
+	
+		<div class="w3-center">
 			  <a class="social-link social-link--dribbble" id="dribbble">
 				<svg class="social-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
 				  <title>
@@ -316,101 +338,18 @@
 				  </g>
 				</svg>
 			  </a>
+			  
+			  <p class="likeText" style="letter-spacing: 1.3px;">Like me on <br /> Linkdin, Instragram, Behance, Dribble</p>
+			  
 		</div>
-		<p>&copy; Copywrite protected 2020</p>
+		<p style="font-family: 'Monsieur La Doulaise', cursive;font-size: 30px;margin: 60px 0px -29px 0px;">asifur rahaman</p>
 	</div>
 	
 	<!--carousel -->
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	
-	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+	<script src="custom.js"></script>
 	
-	<script type="text/javascript">
-	//responsie nav
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-
-//img modal
-
-	function openModal() {
-	  document.getElementById('myModal').style.display = "block";
-	}
-
-	function closeModal() {
-	  document.getElementById('myModal').style.display = "none";
-	}
-
-	var slideIndex = 1;
-	showDivs(slideIndex);
-
-	function plusModal(n) {
-	  showDivs(slideIndex += n);
-	}
-
-	function currentDiv(n) {
-	  showDivs(slideIndex = n);
-	}
-
-	function showDivs(n) {
-	  var i;
-	  var x = document.getElementsByClassName("myModalImg");
-	  var dots = document.getElementsByClassName("demo");
-	  var captionText = document.getElementById("caption");
-	  if (n > x.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = x.length}
-	  for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";
-	  }
-	  for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-	  }
-	  x[slideIndex-1].style.display = "block";
-	  dots[slideIndex-1].className += " w3-opacity-off";
-	  captionText.innerHTML = dots[slideIndex-1].alt;
-	}	
-	
-	//carousel 1
-	$(function(){
-    $("#customer-testimonial").owlCarousel({
-        items: 1,
-        autoplay: true,
-        smartSpeed: 700,
-        look:true,
-        autoPlayHoverPause: true
-    });
-});
-
-//carousel 2
-	$(function(){
-    $("#services-block").owlCarousel({
-       
-		responsive : {
-    0 : {
-        items : 1,
-    },
-    480 : {
-        items : 1,
-    },
-    800 : {
-        items : 2,
-    },
-	860 : {
-        items : 3,
-		dots:false,
-		
-    }
-	
-}
-    });
-});
-	
-	
-	</script>
 </body>
 </html>

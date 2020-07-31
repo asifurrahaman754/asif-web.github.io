@@ -1,28 +1,92 @@
+
+
 html { scroll-behavior: smooth; }
-h2{font-family: 'Quicksand', sans-serif;font-weight:500 !important;color: rgb(64, 62, 62);}
+h2,p,input,.subBtn{font-family: 'Quicksand', sans-serif;}
 a{text-decoration: none;}
-.logo{font-family: sans-serif; font-size: 25px !important;}
-.menu{font-family: 'Montserrat Alternates', sans-serif; font-size: 16px; margin-top: 10px;margin-left:40px}
-img.bg-img {
-    width: 643px;
-    position: absolute;
-    top: 48px;
-    z-index: -999;
-    left: -150px;
+.menu .menu__item{
+	font-family: 'Montserrat Alternates', sans-serif; 
+	font-size: 16px;
+	margin-right: 25px;
 }
-h1.nm{font-family: 'Dosis', sans-serif; color: #ef3ab2;animation-duration: 3s}
-.Intro{
-	padding-left: 70px !important;
-	font-family: 'Quicksand', sans-serif;
-	margin-top: 150px;
-}
-.btn{background-color:#ef3ab2;}
-.menu a:hover{
-	color: #ef3ab2;
+.menu .menu__item:hover{
+	color: #3f51b5;
 	transition: all .4s;
-	text-decoration:none
 }
-.header{overflow:hidden}
+.menu .menu__item:before {
+    content: "";
+    display: block;
+    width: 0;
+    margin: 4px auto 6px;
+    border-top: 3px solid #3f51b5;
+    transition: width .25s;
+}
+.menu .menu__item:hover.menu__item:before{
+	width: 100%;
+	transition: width .25s ease-in-out 0s;
+}
+.social-icon li, .menu li{
+	border-bottom: 0px !important
+}
+.social-icon a {
+    color: #3f51b5;
+    font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+}
+.resp-social-icon a{color:white}
+.homeBg {
+    position: absolute;
+    right: 0px;
+    top:0px;
+    width: 40%;
+    height: 95vh;
+    background: #ddeef6;
+    z-index: -9999;
+    border-radius: 0 0 0 50px;
+}
+img.homeBub {
+    position: absolute;
+    top: 54%;
+    left: 32%;
+    z-index: -999;
+}
+.home__content a,p,h1{font-family: 'Quicksand', sans-serif; }
+
+.imgbg{
+	z-index: -999;
+    width: 70%;
+    margin-left: 65px;
+    position: absolute;
+    right: 0px;
+    transform: rotate(-3deg);
+}
+.heroImg:hover{
+	transform: rotate(-3deg);
+}
+.hireBtn,.contactBtn, .subBtn{
+    width: 150px;
+    height: 40px;
+    display: flex;
+	float:left;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.hireBtn, .subBtn, .mailBtn{	
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.22);
+    color: white;
+	cursor:pointer;
+    background-color: #3f51b5;
+	margin-right: 25px;
+	border:none;
+	
+}
+.contactBtn{
+	border: 2px solid #3f51b5;
+	color: #3f51b5;	
+	cursor:pointer;
+}
+
 img.pab {position: absolute;}
 img.biobg1 {
     width: 47px;
@@ -49,9 +113,21 @@ img.biobg2 {
 .port img{border: 1px solid #ddd; padding: 10px}
 
 /*service carousel */
-#services p{font-family: 'Quicksand', sans-serif;font-size: 18px;margin-top: -8px;}
-#services .columnBox .title{font-size:32px;margin-bottom: 0px;}
-#services .columnBox {
+.columnBox .title{
+	font-size:32px;
+	margin-bottom: 0px;
+	font-weight: 400;
+	color: #64637b;
+	margin-top: -8px;
+}
+
+.columnBox .col-des{
+	font-size:14px;
+	margin-top:20px;
+	font-weight: 500;
+	color: #64637b;
+}
+.columnBox {
     margin: 20px auto;
     width: 266px;
     min-height: 296px;
@@ -65,14 +141,17 @@ img.biobg2 {
     justify-content: space-between;
 	position: relative;
 }
-#services .columnBox:hover{
+.columnBox:hover{
     transform: scale(1.1);
-    color: #f1f1f1 !important ;
     background-color: #3838f8;
 	background-image: url(img/block.png);
     background-repeat: no-repeat;
 	background-size:cover;
     background-position: 10px;
+	box-shadow: 0 10px 25px rgba(56,56,248,.4)!important;
+}
+.columnBox:hover .title, .columnBox:hover .col-des{
+    color: white;
 }
 hr.colhr {
     position: absolute;
@@ -82,7 +161,6 @@ hr.colhr {
     height: 3px;
     border-radius: 10px;
 }
-#services .columnBox .col-des{font-size:14px; margin-top:20px}
 img.serBlock-img {
     position: absolute;
     top: 80px;
@@ -106,24 +184,9 @@ img.connectl {
 }
 img.bubbleImg {
     position: absolute;
-    left: 50px;
     z-index: -999;
     top: 0px;
-    transform: rotate(30deg);
 }
-.menu .w3-bar-item:before {
-    content: "";
-    display: block;
-    width: 0;
-    margin: 4px auto 6px;
-    border-top: 3px solid #ef3ab2;
-    transition: width .25s;
-}
-.w3-bar-item:hover.w3-bar-item:before{
-	width: 100%;
-	transition: width .25s ease-in-out 0s;
-}
-.social-icon a:focus{color: #ef3ab2;}
 img.port-bg-img {
     transform: rotate(-57deg);
     z-index: -999;
@@ -200,20 +263,22 @@ img.con-bg-img {
   -webkit-transition: all .45s;
   transition: all .45s;
 }
-
+.social-link {
+    margin: 30px;
+}
 
 /* responsive menu*/
 .overlay {
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
-  background-color: #f4b50b;
+  background-color: #3f51b5;
+  color:white;
   overflow-y: hidden;
   transition: 0.5s;
-  z-index: 999;
+  z-index: 999999999;
 }
 .overlay-content {
   position: relative;
@@ -224,18 +289,18 @@ img.con-bg-img {
 .overlay-content a {
   padding: 8px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 30px;
   display: block;
   transition: 0.3s;
 }
 .overlay a:hover, .overlay a:focus {
-  color: #ef3ab2;
+  color: #b9b9b9;
 }
-.overlay .closebtn {
+.overlay .closebtn img{
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 50px;
+top: 20px;
+width: 40px;
+right: 30px;
 }
 img.dot-img {
     position: absolute;
@@ -282,8 +347,20 @@ img.dot-img2 {
 	right: 100px;
 }
 /*carousel */
+button.mailBtn {
+    padding: 10px 40px;
+    border-radius: 50px;
+    margin: 10px 0px 50px 0px;
+    transition: all .2s;
+}
 
-
+p.likeText {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #BABABA;
+}
 
 
 @media only screen and (max-width: 992px) {
@@ -292,13 +369,18 @@ img.dot-img2 {
   .port img{margin-bottom: 25px}
   #testimonial .w3-content{margin:0px 20px;}
   #contact{padding:20px 30px 50px 30px}
+  .home__content{flex-flow:column-reverse}
+  .heroImg{
+	float: none !important;
+	margin: auto;
+	display: block;
+	}
 }
 @media only screen and (max-width: 1070px){
 	img.connectl{display: none}
 }
 @media only screen and (max-width: 490px){
 	.testh{height: 70vh !important}
-	.Intro{padding-left: 50px !important;}
 }
 @media only screen and (max-width:560px){
 	.testimonial blockquote{padding:5px 0px}
