@@ -39,7 +39,7 @@ a{text-decoration: none;}
     top:0px;
     width: 40%;
     height: 95vh;
-    background: #ddeef6;
+    background: #ebeffd;
     z-index: -9999;
     border-radius: 0 0 0 50px;
 }
@@ -381,6 +381,10 @@ p.likeText {
 }
 @media only screen and (max-width: 490px){
 	.testh{height: 70vh !important}
+	.homeBg{
+		width: 70%;
+    height: 60vh;
+	}
 }
 @media only screen and (max-width:560px){
 	.testimonial blockquote{padding:5px 0px}
