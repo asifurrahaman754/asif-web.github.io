@@ -391,6 +391,13 @@ p.likeText {
     height: 60vh;
 	}
 }
+
+@media only screen and (max-width: 380px){
+	.hireBtn{
+		margin-bottom:10px
+	}
+	.Intro{padding-left: 15px}
+}
 @media only screen and (max-width:560px){
 	.testimonial blockquote{padding:5px 0px}
 	.testimonial blockquote::before{left:0px}
