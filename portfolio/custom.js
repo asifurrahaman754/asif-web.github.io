@@ -1,5 +1,5 @@
 //greetings
-var date = new Date();
+/*var date = new Date();
 var Hours = date.getHours();
 var greeting;
 
@@ -11,7 +11,7 @@ if(Hours > 18){
 	greeting = "Good morning!";
 }else{
 	greeting = "Welcome!";
-}
+}*/
 //document.querySelector(".greetings").textContent = greeting;
 
 	//responsie nav
@@ -96,3 +96,11 @@ function closeNav() {
 }
     });
 });
+
+//loader
+
+	$(window).on('load',function(){
+		
+		$(".loader-wrapper").fadeOut("slow");
+	});
+
